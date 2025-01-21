@@ -1,3 +1,28 @@
 body {
     font-family: 'Helvetica Neue Condensed Bold', sans-serif;
+    background-color: black;
+}
+
+h1 {
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+}
+
+#cursor {
+    display: inline-block;
+    width: 0.1em; /* Adjust the width to be thinner */
+    height: 1em; /* Match the height of the text */
+    background-color: white;
+    vertical-align: bottom; /* Align the cursor with the bottom of the text */
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: white;
+    }
 }
